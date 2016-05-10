@@ -61,7 +61,7 @@ int main(int argc, char** argv) {
     Inventario inventory;
     Cofre* c;
     /* Creo un filete para meterlo en el cofre y
-     *  meto el cofre en el filete */
+     *  meto el cofre en el inventario */
     
     Filete* depollo=new Filete;
     c->mete(depollo);
