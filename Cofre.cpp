@@ -16,6 +16,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+
 Cofre::Cofre() {
 }
 
@@ -25,17 +26,16 @@ Cofre::Cofre(const Cofre& orig) {
 Cofre::~Cofre() {
 }
 
-void Cofre::mete(Item* item){
-    Cofre *cofre=dynamic_cast<Cofre*>(item);
-    if(cofre!=0)
+void Cofre::mete(Item* item) {
+    Cofre *cofre = dynamic_cast<Cofre*> (item);
+    if (cofre != 0)
         throw std::invalid_argument("[ERROR]: Item no permitido");
-        this->Contenedor<Item>::mete(item); 
-    
+    this->Contenedor<Item>::mete(item);
 }
 
-std::string Cofre::getDescripcion() const{
+std::string Cofre::getDescripcion() const {
     std::stringstream ss;
-    
-    ss<<"Cofre con"<<this->cuantosHay()<<" elementos";
+
+    ss << "Cofre con" << this->cuantosHay() << " elementos";
     return ss.str();
 }
