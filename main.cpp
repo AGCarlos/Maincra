@@ -1,4 +1,4 @@
-/** Solución PR10 y punto de partida PR11
+/** [ Solución PR10 y punto de partida PR11 ]
  * @file   main.cpp
  * @author jrbalsas
  *
